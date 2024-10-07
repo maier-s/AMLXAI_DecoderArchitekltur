@@ -7,8 +7,7 @@
 \providecommand{\BIBentrySTDinterwordspacing}{\spaceskip=0pt\relax}
 \providecommand{\BIBentryALTinterwordstretchfactor}{4}
 \providecommand{\BIBentryALTinterwordspacing}{\spaceskip=\fontdimen2\font plus
-\BIBentryALTinterwordstretchfactor\fontdimen3\font minus
-  \fontdimen4\font\relax}
+\BIBentryALTinterwordstretchfactor\fontdimen3\font minus \fontdimen4\font\relax}
 \providecommand{\BIBforeignlanguage}[2]{{%
 \expandafter\ifx\csname l@#1\endcsname\relax
 \typeout{** WARNING: IEEEtran.bst: No hyphenation pattern has been}%
@@ -22,16 +21,12 @@
 \BIBdecl
 
 \bibitem{vaswaniAttentionAllYou2023}
-A.~Vaswani, N.~Shazeer, N.~Parmar, J.~Uszkoreit, L.~Jones, A.~N. Gomez,
-  L.~Kaiser, and I.~Polosukhin, ``Attention {{Is All You Need}},'' Aug. 2023.
+A.~Vaswani, N.~Shazeer, N.~Parmar, J.~Uszkoreit, L.~Jones, A.~N. Gomez, L.~Kaiser, and I.~Polosukhin, ``Attention {{Is All You Need}},'' Aug. 2023.
 
 \bibitem{yangHarnessingPowerLLMs}
-J.~Yang, H.~Jin, R.~Tang, X.~Han, Q.~Feng, H.~Jiang, B.~Yin, and X.~Hu,
-  ``Harnessing the {{Power}} of {{LLMs}} in {{Practice}}: {{A Survey}} on
-  {{ChatGPT}} and {{Beyond}}.''
+J.~Yang, H.~Jin, R.~Tang, X.~Han, Q.~Feng, H.~Jiang, B.~Yin, and X.~Hu, ``Harnessing the {{Power}} of {{LLMs}} in {{Practice}}: {{A Survey}} on {{ChatGPT}} and {{Beyond}}.''
 
 \bibitem{radfordImprovingLanguageUnderstanding}
-A.~Radford, K.~Narasimhan, T.~Salimans, and I.~Sutskever, ``Improving
-  {{Language Understanding}} by {{Generative Pre-Training}}.''
+A.~Radford, K.~Narasimhan, T.~Salimans, and I.~Sutskever, ``Improving {{Language Understanding}} by {{Generative Pre-Training}}.''
 
 \end{thebibliography}

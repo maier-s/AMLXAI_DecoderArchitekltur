@@ -63,10 +63,34 @@ folgende Abbildung illustriert dabei den Aufbau einer Decoder Schicht des GPT Mo
     \caption{Decoder Architektur nach \cite{radfordImprovingLanguageUnderstanding}}
     \label{fig:DecoderArchitektur}
 \end{figure}
-Die \autoref{fig:DecoderArchitektur} zeigt dabei die Architektur Elemente einer Decoder Schicht. Diese Schichten werden in der ersten GPT Architektur 12 mal hintereinander geschaltet. Jedes dieser Decoder Schichten besteht dabei aus einem Masked MUlti-Self Attention Layer, Layer Normalisation, Feed Forwar Netzwerk und einem weiteren Layer Normalisation. Die genaue Funktionsweise dieser Schichten wird in \cite{vaswaniAttentionAllYou2023} beschrieben. Abschlißend wird in der GPT Architektur ein Layer je nach Aufgabe angehängt, welche in \autoref{fig:DecoderArchitektur} durch Text Vorhersage oder Aufgaben Klassifizierung repräsentiert wird.
+Die \autoref{fig:DecoderArchitektur} zeigt dabei die Architektur Elemente einer Decoder Schicht. Diese Schichten werden in der ersten GPT Architektur 12 mal hintereinander geschaltet. Jedes dieser Decoder Schichten besteht dabei aus einem Masked Multi-Self Attention Layer, Feed Forward Netzwerken, sowie Add und Layer Normalisation Schicht um die Residual Verbindungen der vorherigen Schicht hinzuzufügen. Die Residual Verbindungen sollen vorallem das Problem der verschwindend Gradienten beheben. Der wichtigste Bestandteil der Decoder Schicht ist dabei das Masked Multi-Self Attention Layer. Das Masked Multi-Self Attention Layer ist dabei eine leichte Abwandlung des Mult Self Attention Layers das auch in Encoder Elementen verwendet wird. Nachffolgende Abbildung zeigt den Aufbau eines Multi-Self Attention Layers.
+% Neues Bild
+\begin{figure}[htbp]
+    \centerline{\includegraphics[width=\linewidth]{Bilder/MultiheadSelfAttention.png}}
+    \caption{Multi-Self Attention Layer nach \cite{}}
+\label{fig:MultiSelfAttention}
+\end{figure}
+Die Multiplen Heads in der \autoref{fig:MultiSelfAttention} repräsentieren dabei die Anzahl der Köpfe die in der Attention Schicht verwendet werden welche durch die Anzahl an $h$ Köpfe an parallelen Berechnung des Attention Layers bestimmt sind.
+zur Berechnung der Ausgabe des Attention Layers werden die Attention Weights berechnet welche bestimen wie wichtig ein Wort für ein anderes Wort ist, was durch nachfolgende Abbildung Visualisiert ist.
+% Bild AttentionMechanismus
+\begin{figure}[htbp]
+    \centerline{\includegraphics[width=\linewidth]{Bilder/AttentionMechanismus.png}}
+    \caption{Attention Mechanismus nach \cite{}}
+\label{fig:AttentionMechanismus}
+\end{figure}
+Die Färbung in der \autoref{fig:AttentionMechanismus} zeigt dabei die Wichtigkeit der Wörter zueinander. Die daraus berechnete Attention Weights werden mit dem Werten der Wörter multipliziert und über ein Lineares Layer verfeinert, dies ergibt die Ausgabe des Attention Layers. Der wesentliche Unterschied zwischen dem Multi-Self Attention Layer und dem Masked Multi-Self Attention Layer ist dabei die Maskierung der Attention Weights. Die Maskierung sorgt dafür, dass ein Wort nur von vorherigen Wörtern abhängt und damit die Attention einbezieht. Die nachfolgende Abbildung zeigt die Maskierung der Attention Weights mithilfe eine Maskierungsmatrix.
+% Bild Maskierung
 
-\subsection{Trainingsprozess der GPT-Decoder Architektur}
+\begin{figure}[htbp]
+    \centerline{\includegraphics[width=\linewidth]{Bilder/MaskierungAttentionWeights.png}}
+    \caption{Maskierung der Attention Weights nach \cite{}}
+\label{fig:Maskierung}
+\end{figure}
+Die genaue Funktionsweise der einzelnen Schichten aus \autoref{fig:DecoderArchitektur}  wird in \cite{vaswaniAttentionAllYou2023} beschrieben. Abschlißend wird in der GPT Architektur ein Layer je nach Aufgabe angehängt, welche in \autoref{fig:DecoderArchitektur} durch Text Vorhersage oder Aufgaben Klassifizierung repräsentiert wird. Dies kann beispielsweise ein Lineares Layer mit Softmax Aktivierungsfunktion sein, welches die Wahrscheinlichkeiten für das nächste Wort aus dem Vokabular berechnet.
 \subsection{Abgrenzung der Decoder Architektur zur Encoder Architektur}
+Die vorgeschlagende Decoder Architektur durch \cite{radfordImprovingLanguageUnderstanding} unterscheidet sich dabei von der Encoder Architektur durch die Verwendung von Masked Multi-Self Attention Layern. Die Encoder Architektur verwendet hingegen Multi-Self Attention Layer ohne Maskierung. Entscheidend ist ebenfalls das die Architektur aus \cite{radfordImprovingLanguageUnderstanding} keine einzeziehung der Encoder Schicht vorsieht und somit im Vergleich zur Decoder Architektur aus \cite{vaswaniAttentionAllYou2023} keine weitere Multi-Self Attention Layer enthält. Die Decoder Architektur ist dabei auf die Generierung von Text ausgelegt und kann somit als autoregressives Modell betrachtet werden. Die Encoder Architektur hingegen ist auf die Verarbeitung von Texten ausgelegt und kann als diskriminatives Modell betrachtet werden.
+\subsection{Trainingsprozess der GPT-Decoder Architektur}
+Das entscheidende bei der in \cite{radfordImprovingLanguageUnderstanding} beschrieben Decoder Architektur ist das sogenannte vortrainieren des Modells. Das Vortrainieren des Modells erfolgt dabei auf großen Textkorpora wie Wikipedia, Bücher oder Nachrichten.
 
 \section{Anwendungsbereiche}
 
