@@ -1,14 +1,15 @@
-This is BibTeX, Version 0.99d (TeX Live 2023)
+This is BibTeX, Version 0.99d
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: IEEE-conference-template-062824.aux
+Reallocating 'name_of_file' (item size: 1) to 9 items.
 The style file: IEEEtran.bst
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocating 'name_of_file' (item size: 1) to 10 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
 Database file #1: AMLundXAI.bib
-Warning--I didn't find a database entry for ""
 -- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
@@ -18,45 +19,45 @@ Warning--empty journal in radfordImprovingLanguageUnderstanding
 Warning--empty year in radfordImprovingLanguageUnderstanding
 
 Done.
-You've used 3 entries,
+You've used 4 entries,
             4087 wiz_defined-function locations,
-            836 strings with 8083 characters,
-and the built_in function-call counts, 1619 in all, are:
-= -- 79
-> -- 83
+            840 strings with 8293 characters,
+and the built_in function-call counts, 1887 in all, are:
+= -- 96
+> -- 84
 < -- 0
-+ -- 40
++ -- 41
 - -- 20
-* -- 95
-:= -- 238
-add.period$ -- 6
-call.type$ -- 3
-change.case$ -- 3
+* -- 101
+:= -- 277
+add.period$ -- 8
+call.type$ -- 4
+change.case$ -- 4
 chr.to.int$ -- 0
-cite$ -- 7
-duplicate$ -- 126
-empty$ -- 132
+cite$ -- 8
+duplicate$ -- 154
+empty$ -- 166
 format.name$ -- 23
-if$ -- 341
+if$ -- 404
 int.to.chr$ -- 0
-int.to.str$ -- 3
-missing$ -- 34
-newline$ -- 32
+int.to.str$ -- 4
+missing$ -- 40
+newline$ -- 35
 num.names$ -- 3
-pop$ -- 108
+pop$ -- 127
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 100
+skip$ -- 124
 stack$ -- 0
-substring$ -- 3
-swap$ -- 77
+substring$ -- 4
+swap$ -- 89
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 3
+type$ -- 4
 warning$ -- 4
 while$ -- 3
-width$ -- 4
-write$ -- 41
-(There were 5 warnings)
+width$ -- 5
+write$ -- 47
+(There were 4 warnings)

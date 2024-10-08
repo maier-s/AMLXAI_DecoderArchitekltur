@@ -67,7 +67,7 @@ Die \autoref{fig:DecoderArchitektur} zeigt dabei die Architektur Elemente einer 
 % Neues Bild
 \begin{figure}[htbp]
     \centerline{\includegraphics[width=\linewidth]{Bilder/MultiheadSelfAttention.png}}
-    \caption{Multi-Self Attention Layer nach \cite{}}
+    \caption{Multi-Self Attention Layer nach \cite{WieTransformatorenFunktionieren}}
 \label{fig:MultiSelfAttention}
 \end{figure}
 Die Multiplen Heads in der \autoref{fig:MultiSelfAttention} repräsentieren dabei die Anzahl der Köpfe die in der Attention Schicht verwendet werden welche durch die Anzahl an $h$ Köpfe an parallelen Berechnung des Attention Layers bestimmt sind.
@@ -75,7 +75,7 @@ zur Berechnung der Ausgabe des Attention Layers werden die Attention Weights ber
 % Bild AttentionMechanismus
 \begin{figure}[htbp]
     \centerline{\includegraphics[width=\linewidth]{Bilder/AttentionMechanismus.png}}
-    \caption{Attention Mechanismus nach \cite{}}
+    \caption{Attention Mechanismus nach \cite{WieTransformatorenFunktionieren}}
 \label{fig:AttentionMechanismus}
 \end{figure}
 Die Färbung in der \autoref{fig:AttentionMechanismus} zeigt dabei die Wichtigkeit der Wörter zueinander. Die daraus berechnete Attention Weights werden mit dem Werten der Wörter multipliziert und über ein Lineares Layer verfeinert, dies ergibt die Ausgabe des Attention Layers. Der wesentliche Unterschied zwischen dem Multi-Self Attention Layer und dem Masked Multi-Self Attention Layer ist dabei die Maskierung der Attention Weights. Die Maskierung sorgt dafür, dass ein Wort nur von vorherigen Wörtern abhängt und damit die Attention einbezieht. Die nachfolgende Abbildung zeigt die Maskierung der Attention Weights mithilfe eine Maskierungsmatrix.
@@ -83,14 +83,40 @@ Die Färbung in der \autoref{fig:AttentionMechanismus} zeigt dabei die Wichtigke
 
 \begin{figure}[htbp]
     \centerline{\includegraphics[width=\linewidth]{Bilder/MaskierungAttentionWeights.png}}
-    \caption{Maskierung der Attention Weights nach \cite{}}
+    \caption{Maskierung der Attention Weights nach \cite{WieTransformatorenFunktionieren}}
 \label{fig:Maskierung}
 \end{figure}
-Die genaue Funktionsweise der einzelnen Schichten aus \autoref{fig:DecoderArchitektur}  wird in \cite{vaswaniAttentionAllYou2023} beschrieben. Abschlißend wird in der GPT Architektur ein Layer je nach Aufgabe angehängt, welche in \autoref{fig:DecoderArchitektur} durch Text Vorhersage oder Aufgaben Klassifizierung repräsentiert wird. Dies kann beispielsweise ein Lineares Layer mit Softmax Aktivierungsfunktion sein, welches die Wahrscheinlichkeiten für das nächste Wort aus dem Vokabular berechnet.
+Die genaue Funktionsweise der einzelnen Schichten aus \autoref{fig:DecoderArchitektur}  wird in \cite{vaswaniAttentionAllYou2023} beschrieben. Abschlißend wird in der GPT Architektur ein Layer je nach Aufgabe angehängt, welche in \autoref{fig:DecoderArchitektur} durch Text Vorhersage oder Aufgaben Klassifizierung repräsentiert wird. Dies kann beispielsweise ein Lineares Layer mit Softmax Aktivierungsfunktion sein, welches die Wahrscheinlichkeiten für das nächste Wort aus dem Vokabular berechnet \cite{WieTransformatorenFunktionieren}.
 \subsection{Abgrenzung der Decoder Architektur zur Encoder Architektur}
 Die vorgeschlagende Decoder Architektur durch \cite{radfordImprovingLanguageUnderstanding} unterscheidet sich dabei von der Encoder Architektur durch die Verwendung von Masked Multi-Self Attention Layern. Die Encoder Architektur verwendet hingegen Multi-Self Attention Layer ohne Maskierung. Entscheidend ist ebenfalls das die Architektur aus \cite{radfordImprovingLanguageUnderstanding} keine einzeziehung der Encoder Schicht vorsieht und somit im Vergleich zur Decoder Architektur aus \cite{vaswaniAttentionAllYou2023} keine weitere Multi-Self Attention Layer enthält. Die Decoder Architektur ist dabei auf die Generierung von Text ausgelegt und kann somit als autoregressives Modell betrachtet werden. Die Encoder Architektur hingegen ist auf die Verarbeitung von Texten ausgelegt und kann als diskriminatives Modell betrachtet werden.
 \subsection{Trainingsprozess der GPT-Decoder Architektur}
-Das entscheidende bei der in \cite{radfordImprovingLanguageUnderstanding} beschrieben Decoder Architektur ist das sogenannte vortrainieren des Modells. Das Vortrainieren des Modells erfolgt dabei auf großen Textkorpora wie Wikipedia, Bücher oder Nachrichten.
+Das entscheidende bei der in \cite{radfordImprovingLanguageUnderstanding} beschrieben Decoder Architektur ist der Trainingsprozess der aus zwei Stufen besteht.
+\paragraph{unüberwachtes Vortrainieren}
+Zum einen das unüberwachte Vortrainieren des om Abschnitt A beschriebenen Modells. Dabei ist die Zielfunktion folgende Likelyhoodfunktion:
+\begin{equation}
+    L_1({\cal U}) = \sum_{i}^{} log P( u_i|u_i-k ... u_i-1;\theta)
+    \label{eq:Zielfunktion1}
+\end{equation}
+k ist dabei das Kontext Fenster und somit wird die Wahrscheinlichtkeit des nächsten Wortes auf basis der vorherigen $k$-Tokens bestimmt.
+\paragraph{überwachtes Fine-Tuning}
+Der zweite Schritt ist das überwachte Fine-Tuning auf die gewünschte Zielaufgabe. Dabei handelt es sich um $m$-Eingabe Tokens, welche in eine Klasse aus $\cal C$ transformiert werden. Die Zielfunktion ist folgende Likelyhoodfunktion:
+\begin{equation}
+    L_2({\cal C}) = \sum_{(x,y)}^{} log P(y|x^1 ... x^m)
+    \label{eq:Zielfunktion2}
+\end{equation}
+Dabei wird die Zielfunktion aus \autoref{eq:Zielfunktion2} mit der Funktion aus \autoref{eq:Zielfunktion1} zu \autoref{eq:Zielfunktion3} kombiniert damit der Trainingsprozess besser konvergiert, sowie generalisiert \cite{radfordImprovingLanguageUnderstanding}.
+\begin{equation}
+    L_3({\cal C}) = L_2({\cal C}) + \lambda L_1({\cal C})
+    \label{eq:Zielfunktion3}
+\end{equation}
+Da das vortrainierte Modell wie in \autoref{eq:Zielfunktion1} beschrieben auf die vorhersage der nächsten Worte optimiert ist, müssen für das Finetuning die Input Tokens entsprechend der nachfolgenden \autoref{fig:InputTokens} wie in \cite{radfordImprovingLanguageUnderstanding} angepasst werden.
+% Bild Input Tokens
+\begin{figure}[htbp]
+    \centerline{\includegraphics[width=\linewidth]{Bilder/TokenAnpassungGPT1.png}}
+    \caption{Anpassung der Input Tokens nach \cite{radfordImprovingLanguageUnderstanding}}
+\label{fig:InputTokens}
+\end{figure}
+Dabei werden strukturierte Daten in eine geordnete Reihenfolge gebracht, um die Eingabe für das Modell zu generieren. \autoref{fig:InputTokens} zeigt das für eine Multiple Choice Aufgabe zuerst ein zufällig ausgewähltes Start Token, der Kontext und anschließend die Antwort mit einem zufällig ausgewählten Wert für das Abschluss Token übergeben wird. Für diese spezifische Aufgabe werden anschließend drei Transformer parallel trainiert, um die korrekte Antwort zu vorherzusagen.
 
 \section{Anwendungsbereiche}
 
@@ -104,7 +130,7 @@ Das entscheidende bei der in \cite{radfordImprovingLanguageUnderstanding} beschr
 
 
 
-\bibliography{AMLundXAI}
 
+\bibliography{AMLundXAI}
 
 \end{document}
