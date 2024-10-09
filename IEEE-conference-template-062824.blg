@@ -17,47 +17,49 @@ Warning--empty journal in yangHarnessingPowerLLMs
 Warning--empty year in yangHarnessingPowerLLMs
 Warning--empty journal in radfordImprovingLanguageUnderstanding
 Warning--empty year in radfordImprovingLanguageUnderstanding
+Warning--empty journal in radfordLanguageModelsAre
+Warning--empty year in radfordLanguageModelsAre
 
 Done.
-You've used 4 entries,
+You've used 8 entries,
             4087 wiz_defined-function locations,
-            840 strings with 8293 characters,
-and the built_in function-call counts, 1887 in all, are:
-= -- 96
-> -- 84
+            862 strings with 14684 characters,
+and the built_in function-call counts, 13819 in all, are:
+= -- 501
+> -- 1352
 < -- 0
-+ -- 41
-- -- 20
-* -- 101
-:= -- 277
-add.period$ -- 8
-call.type$ -- 4
-change.case$ -- 4
++ -- 673
+- -- 336
+* -- 776
+:= -- 1432
+add.period$ -- 16
+call.type$ -- 8
+change.case$ -- 8
 chr.to.int$ -- 0
-cite$ -- 8
-duplicate$ -- 154
-empty$ -- 166
-format.name$ -- 23
-if$ -- 404
+cite$ -- 14
+duplicate$ -- 904
+empty$ -- 931
+format.name$ -- 343
+if$ -- 3193
 int.to.chr$ -- 0
-int.to.str$ -- 4
-missing$ -- 40
-newline$ -- 35
-num.names$ -- 3
-pop$ -- 127
+int.to.str$ -- 8
+missing$ -- 378
+newline$ -- 47
+num.names$ -- 7
+pop$ -- 1144
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 124
+skip$ -- 846
 stack$ -- 0
-substring$ -- 4
-swap$ -- 89
+substring$ -- 8
+swap$ -- 782
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 4
-warning$ -- 4
-while$ -- 3
-width$ -- 5
-write$ -- 47
-(There were 4 warnings)
+type$ -- 8
+warning$ -- 6
+while$ -- 7
+width$ -- 9
+write$ -- 74
+(There were 6 warnings)

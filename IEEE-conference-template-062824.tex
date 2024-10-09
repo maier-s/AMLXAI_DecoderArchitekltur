@@ -20,7 +20,7 @@
 \IEEEauthorblockA{\textit{Function and Algorithm} \\
 \textit{ZF Lifetec}\\
 Alfdorf, Deutschland \\
-Stefan.Maier1@zf.com}
+Stefan.Maier1@zf-lifetec.com}
 
 }
 
@@ -94,19 +94,19 @@ Das entscheidende bei der in \cite{radfordImprovingLanguageUnderstanding} beschr
 \paragraph{unüberwachtes Vortrainieren}
 Zum einen das unüberwachte Vortrainieren des om Abschnitt A beschriebenen Modells. Dabei ist die Zielfunktion folgende Likelyhoodfunktion:
 \begin{equation}
-    L_1({\cal U}) = \sum_{i}^{} log P( u_i|u_i-k ... u_i-1;\theta)
+    {\cal L}_1({\cal U}) = \sum_{i}^{} log P( u_i|u_i-k ... u_i-1;\theta)
     \label{eq:Zielfunktion1}
 \end{equation}
-k ist dabei das Kontext Fenster und somit wird die Wahrscheinlichtkeit des nächsten Wortes auf basis der vorherigen $k$-Tokens bestimmt.
+k ist dabei das Kontext Fenster und somit wird die Wahrscheinlichkeit des nächsten Wortes auf Basis der vorherigen $k$-Tokens bestimmt. Das erste GPT Modell wurde dabei auf Tokens aus dem BookCorpus dataset vortrainiert. Wie bereits in \autoref{ig:DecoderArchitektur} beschrieben wurden 12 Decoder Schichten verwendet. Für die Attention Heads $h$ wurden 12 Heads verwendet bei 768 Embedding Dimensionen. Für das Feed Forward Netzwerk wurde eine GELU (Gaussian Error Linear Unit) verwendet. Das Training wurde über 100 Epochen mit einer Batchgröße von 64 durchgeführt.
 \paragraph{überwachtes Fine-Tuning}
 Der zweite Schritt ist das überwachte Fine-Tuning auf die gewünschte Zielaufgabe. Dabei handelt es sich um $m$-Eingabe Tokens, welche in eine Klasse aus $\cal C$ transformiert werden. Die Zielfunktion ist folgende Likelyhoodfunktion:
 \begin{equation}
-    L_2({\cal C}) = \sum_{(x,y)}^{} log P(y|x^1 ... x^m)
+    {\cal L}_2({\cal C}) = \sum_{(x,y)}^{} log P(y|x^1 ... x^m)
     \label{eq:Zielfunktion2}
 \end{equation}
 Dabei wird die Zielfunktion aus \autoref{eq:Zielfunktion2} mit der Funktion aus \autoref{eq:Zielfunktion1} zu \autoref{eq:Zielfunktion3} kombiniert damit der Trainingsprozess besser konvergiert, sowie generalisiert \cite{radfordImprovingLanguageUnderstanding}.
 \begin{equation}
-    L_3({\cal C}) = L_2({\cal C}) + \lambda L_1({\cal C})
+    {\cal L}_3({\cal C}) = {\cal L}_2({\cal C}) + \lambda {\cal L}_1({\cal C})
     \label{eq:Zielfunktion3}
 \end{equation}
 Da das vortrainierte Modell wie in \autoref{eq:Zielfunktion1} beschrieben auf die vorhersage der nächsten Worte optimiert ist, müssen für das Finetuning die Input Tokens entsprechend der nachfolgenden \autoref{fig:InputTokens} wie in \cite{radfordImprovingLanguageUnderstanding} angepasst werden.
@@ -116,9 +116,18 @@ Da das vortrainierte Modell wie in \autoref{eq:Zielfunktion1} beschrieben auf di
     \caption{Anpassung der Input Tokens nach \cite{radfordImprovingLanguageUnderstanding}}
 \label{fig:InputTokens}
 \end{figure}
-Dabei werden strukturierte Daten in eine geordnete Reihenfolge gebracht, um die Eingabe für das Modell zu generieren. \autoref{fig:InputTokens} zeigt das für eine Multiple Choice Aufgabe zuerst ein zufällig ausgewähltes Start Token, der Kontext und anschließend die Antwort mit einem zufällig ausgewählten Wert für das Abschluss Token übergeben wird. Für diese spezifische Aufgabe werden anschließend drei Transformer parallel trainiert, um die korrekte Antwort zu vorherzusagen.
+Dabei werden strukturierte Daten in eine geordnete Reihenfolge gebracht, um die Eingabe für das Modell zu generieren. \autoref{fig:InputTokens} zeigt, dass für eine Multiple Choice Aufgabe zuerst ein zufällig ausgewähltes Start Token, der Kontext und anschließend die Antwort mit einem zufällig ausgewählten Wert für das Abschluss Token übergeben wird. Für diese spezifische Aufgabe werden anschließend drei Transformer parallel trainiert, um die korrekte Antwort zu vorherzusagen. Für das eigentliche Training wurden die meisten Hyperparameter aus dem Unsuperwised Training übernommen. Lediglich wurde ein Dropout vor der Klassifizierungsschicht hinzugefügt und die Lernrate wurde reduziert. Das Paper aus \cite{radfordImprovingLanguageUnderstanding} zeigt dabei, dass 3 Epochen ausreichen um eine gewünschte Genauigkeit zu erzielen.
+
+\subsection{Weiterentwicklung der GPT-Decoder Architektur}
+Die erste GPT Version ist ein Meilenstein in der Entwicklung von Decoder-only Architekturen. Die Weiterentwicklung der GPT Architektur zeigt dabei die Entwicklung von GPT-2, GPT-3 und GPT-4. GPT2 verbesserte die Funktionsweise von großen Sprachmodellen dass diese auf mehrere Aufgaben trainiert werden. Dabei war das Ziel ein Modell zu entwerfen das eine Warscheinlichkeit für eine Output Token Sequenz in Abhängigkeit der Input Tokens sowie der Aufgaben Spezifikation zu erlernen.
+\begin{equation}
+    P(s_{n-k}, ..., s_n|s_1, ..., s_{n-k-1},task)
+    \label{eq:Wahrscheinlichkeit}
+\end{equation}
+Für das Training das GPT2 Modell wird als Datensatz WebText verwendet welche aus Inhalten kuratierter Websiten besteht. Die Modell struktur ist ähnlich zur ursprünglichen GPT Architektur, jedoch wurde die Anzahl des Kontextfensters von 512 auf 1024 erhöht. Anstatt 12 Decoder-only Layers wurden bei GPT2 48 Layers verwenden mit einer Embedding Dimension von 1600 was zu einer Parametermenge von ca. 1,5 Milliarden Parameter führt. GPT2 zeigt zum ersten mal das ein großes Sprachmodell auf mehrere Aufgaben gleichzeitig trainiert werden kann, sofern der Trainingsdatensatz divers genug ist \cite{radfordLanguageModelsAre}. Während der Fokus bei GPT2 vorallem auf der Zero Shot Performance und das Unsupervised Mulittask Learning liegt, wurde das GPT3 Modell im Fokus des Few Shot Learnings betrachtet. GPT3 erweitert auch hier die Funktionalität von GPT2 erneut und verwendet statt des Masked Multi-Self Attention Layer, Attention Konzepte aus \cite{childGeneratingLongSequences2019} ähnlich der sogenannten Sparse Transformes. Diese ermöglichen es Längere Sequenzen zu verarbeiten und das Training tieferer Modelle zu ermöglichen. Das Paper aus \cite{brownLanguageModelsAre2020} zeigt dass größere Modelle entscheidende Vorteile beim Meta Learning oder Few-Shot Learning haben. So besteht das größte GPT3 Modell aus 175 Milliarden Parametern. Das neueste Modell von OpenAI GPT4 zeigt die Weiterentwicklung von GPT3 und setzt zusätzlich zum Unsupervised Vortraining auf Finetuning über Menschen gesteuertes Feedback mittels Reinforcement Learning. Leider gibt es zum aktuellen Zeitpunkt keine weiteren Details zur Architektur von GPT4 wie in \cite{openaiGPT4TechnicalReport2024} beschrieben. Das Paper in \cite{openaiGPT4TechnicalReport2024} zeigt jedoch anhand der verwendeten Trainingsressourcen, dass das GPT Modell entsprechend groß ist. Zudem wird beschrieben, dass eine Infrastruktur im Rahmen der GPT4 Entwicklung entwickelt wurde um verlässliche die Entwicklung des Modells vorher zu sagen und die Trainingsressourcen zu optimieren.
 
 \section{Anwendungsbereiche}
+Die GPT Paper zeigen bereits bei der Model Evaluation auf unterschiedliche Datensätze, die Anwendungsbereiche großer Sprachmodelle. Die Anwendungsbereiche sind dabei vielfältig und reichen von Text Generierung, Text Klassifikation, Text Verständnis, Text Zusammenfassung, Text Übersetzung, Text Extraktion
 
 \section{Potenzial und Grenzen von Decoder Architekturen}
 

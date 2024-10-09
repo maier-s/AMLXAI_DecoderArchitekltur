@@ -262,6 +262,8 @@ INPUT .\Bilder\TokenAnpassungGPT1.png
 INPUT .\Bilder\TokenAnpassungGPT1.png
 INPUT .\Bilder\TokenAnpassungGPT1.png
 INPUT .\Bilder\TokenAnpassungGPT1.png
+INPUT C:\Users\MAIERS3\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmb7t.vf
+INPUT C:\Users\MAIERS3\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmb8r.tfm
 INPUT .\IEEE-conference-template-062824.bbl
 INPUT .\IEEE-conference-template-062824.bbl
 INPUT IEEE-conference-template-062824.bbl
@@ -280,6 +282,8 @@ INPUT C:\Users\MAIERS3\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts
 INPUT C:\Users\MAIERS3\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr7.pfb
 INPUT C:\Users\MAIERS3\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Users\MAIERS3\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
+INPUT C:\Users\MAIERS3\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy7.pfb
+INPUT C:\Users\MAIERS3\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy7.pfb
 INPUT C:\Users\MAIERS3\AppData\Local\Programs\MiKTeX\fonts\type1\urw\times\utmb8a.pfb
 INPUT C:\Users\MAIERS3\AppData\Local\Programs\MiKTeX\fonts\type1\urw\times\utmb8a.pfb
 INPUT C:\Users\MAIERS3\AppData\Local\Programs\MiKTeX\fonts\type1\urw\times\utmbi8a.pfb

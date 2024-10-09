@@ -39,4 +39,65 @@ A.~Radford, K.~Narasimhan, T.~Salimans, and I.~Sutskever, ``Improving
   Transformatorarchitektur},''
   https://www.datacamp.com/tutorial/how-transformers-work.
 
+\bibitem{radfordLanguageModelsAre}
+A.~Radford, J.~Wu, R.~Child, D.~Luan, D.~Amodei, and I.~Sutskever, ``Language
+  {{Models}} are {{Unsupervised Multitask Learners}}.''
+
+\bibitem{childGeneratingLongSequences2019}
+R.~Child, S.~Gray, A.~Radford, and I.~Sutskever, ``Generating {{Long
+  Sequences}} with {{Sparse Transformers}},'' Apr. 2019.
+
+\bibitem{brownLanguageModelsAre2020}
+T.~B. Brown, B.~Mann, N.~Ryder, M.~Subbiah, J.~Kaplan, P.~Dhariwal,
+  A.~Neelakantan, P.~Shyam, G.~Sastry, A.~Askell, S.~Agarwal,
+  A.~{Herbert-Voss}, G.~Krueger, T.~Henighan, R.~Child, A.~Ramesh, D.~M.
+  Ziegler, J.~Wu, C.~Winter, C.~Hesse, M.~Chen, E.~Sigler, M.~Litwin, S.~Gray,
+  B.~Chess, J.~Clark, C.~Berner, S.~McCandlish, A.~Radford, I.~Sutskever, and
+  D.~Amodei, ``Language {{Models}} are {{Few-Shot Learners}},'' Jul. 2020.
+
+\bibitem{openaiGPT4TechnicalReport2024}
+OpenAI, L.~Ahmad, F.~L. Aleman, J.~Altenschmidt, S.~Altman, S.~Anadkat,
+  R.~Avila, I.~Babuschkin, S.~Balaji, V.~Balcom, P.~Baltescu, H.~Bao,
+  M.~Bavarian, J.~Belgum, I.~Bello, J.~Berdine, C.~Berner, L.~Bogdonoff,
+  O.~Boiko, M.~Boyd, A.-L. Brakman, G.~Brockman, T.~Brooks, M.~Brundage,
+  K.~Button, T.~Cai, R.~Campbell, A.~Cann, B.~Carey, C.~Carlson, R.~Carmichael,
+  B.~Chan, C.~Chang, F.~Chantzis, D.~Chen, S.~Chen, R.~Chen, J.~Chen, M.~Chen,
+  B.~Chess, C.~Cho, C.~Chu, H.~W. Chung, D.~Cummings, J.~Currier, Y.~Dai,
+  C.~Decareaux, T.~Degry, N.~Deutsch, D.~Deville, A.~Dhar, D.~Dohan,
+  S.~Dowling, S.~Dunning, A.~Ecoffet, A.~Eleti, T.~Eloundou, D.~Farhi,
+  L.~Fedus, N.~Felix, S.~P. Fishman, J.~Forte, I.~Fulford, L.~Gao, E.~Georges,
+  C.~Gibson, V.~Goel, T.~Gogineni, G.~Goh, R.~{Gontijo-Lopes}, J.~Gordon,
+  M.~Grafstein, S.~Gray, R.~Greene, J.~Gross, S.~S. Gu, Y.~Guo, C.~Hallacy,
+  J.~Han, J.~Harris, Y.~He, M.~Heaton, J.~Heidecke, C.~Hesse, A.~Hickey,
+  W.~Hickey, P.~Hoeschele, B.~Houghton, K.~Hsu, S.~Hu, X.~Hu, J.~Huizinga,
+  S.~Jain, S.~Jain, J.~Jang, A.~Jiang, R.~Jiang, H.~Jin, D.~Jin, S.~Jomoto,
+  B.~Jonn, H.~Jun, T.~Kaftan, {\L}.~Kaiser, A.~Kamali, I.~Kanitscheider, N.~S.
+  Keskar, T.~Khan, L.~Kilpatrick, J.~W. Kim, C.~Kim, Y.~Kim, J.~H. Kirchner,
+  J.~Kiros, M.~Knight, D.~Kokotajlo, {\L}.~Kondraciuk, A.~Kondrich,
+  A.~Konstantinidis, K.~Kosic, G.~Krueger, V.~Kuo, M.~Lampe, I.~Lan, T.~Lee,
+  J.~Leike, J.~Leung, D.~Levy, C.~M. Li, R.~Lim, M.~Lin, S.~Lin, M.~Litwin,
+  T.~Lopez, R.~Lowe, P.~Lue, A.~Makanju, K.~Malfacini, S.~Manning, T.~Markov,
+  Y.~Markovski, B.~Martin, K.~Mayer, A.~Mayne, B.~McGrew, S.~M. McKinney,
+  C.~McLeavey, P.~McMillan, J.~McNeil, D.~Medina, A.~Mehta, J.~Menick, L.~Metz,
+  A.~Mishchenko, P.~Mishkin, V.~Monaco, E.~Morikawa, D.~Mossing, T.~Mu,
+  M.~Murati, O.~Murk, D.~M{\'e}ly, A.~Nair, R.~Nakano, R.~Nayak,
+  A.~Neelakantan, R.~Ngo, H.~Noh, L.~Ouyang, C.~O'Keefe, J.~Pachocki, A.~Paino,
+  J.~Palermo, A.~Pantuliano, G.~Parascandolo, J.~Parish, E.~Parparita,
+  A.~Passos, M.~Pavlov, A.~Peng, A.~Perelman, F.~d. A.~B. Peres, M.~Petrov,
+  H.~P. d.~O. Pinto, Michael, Pokorny, M.~Pokrass, V.~H. Pong, T.~Powell,
+  A.~Power, B.~Power, E.~Proehl, R.~Puri, A.~Radford, J.~Rae, A.~Ramesh,
+  C.~Raymond, F.~Real, K.~Rimbach, C.~Ross, B.~Rotsted, H.~Roussez, N.~Ryder,
+  M.~Saltarelli, T.~Sanders, S.~Santurkar, G.~Sastry, H.~Schmidt, D.~Schnurr,
+  J.~Schulman, D.~Selsam, K.~Sheppard, T.~Sherbakov, J.~Shieh, S.~Shoker,
+  P.~Shyam, S.~Sidor, E.~Sigler, M.~Simens, J.~Sitkin, K.~Slama, I.~Sohl,
+  B.~Sokolowsky, Y.~Song, N.~Staudacher, F.~P. Such, N.~Summers, I.~Sutskever,
+  J.~Tang, N.~Tezak, M.~B. Thompson, P.~Tillet, A.~Tootoonchian, E.~Tseng,
+  P.~Tuggle, N.~Turley, J.~Tworek, J.~F.~C. Uribe, A.~Vallone, A.~Vijayvergiya,
+  C.~Voss, C.~Wainwright, J.~J. Wang, A.~Wang, B.~Wang, J.~Ward, J.~Wei, C.~J.
+  Weinmann, A.~Welihinda, P.~Welinder, J.~Weng, L.~Weng, M.~Wiethoff,
+  D.~Willner, C.~Winter, S.~Wolrich, H.~Wong, L.~Workman, S.~Wu, J.~Wu, M.~Wu,
+  K.~Xiao, T.~Xu, S.~Yoo, K.~Yu, Q.~Yuan, W.~Zaremba, R.~Zellers, C.~Zhang,
+  M.~Zhang, S.~Zhao, T.~Zheng, J.~Zhuang, W.~Zhuk, and B.~Zoph, ``{{GPT-4
+  Technical Report}},'' Mar. 2024.
+
 \end{thebibliography}
