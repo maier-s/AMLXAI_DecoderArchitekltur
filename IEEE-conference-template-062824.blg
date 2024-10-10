@@ -21,45 +21,45 @@ Warning--empty journal in radfordLanguageModelsAre
 Warning--empty year in radfordLanguageModelsAre
 
 Done.
-You've used 8 entries,
+You've used 13 entries,
             4087 wiz_defined-function locations,
-            862 strings with 14684 characters,
-and the built_in function-call counts, 13819 in all, are:
-= -- 501
-> -- 1352
+            886 strings with 15703 characters,
+and the built_in function-call counts, 15558 in all, are:
+= -- 616
+> -- 1387
 < -- 0
-+ -- 673
-- -- 336
-* -- 776
-:= -- 1432
-add.period$ -- 16
-call.type$ -- 8
-change.case$ -- 8
++ -- 691
+- -- 344
+* -- 830
+:= -- 1704
+add.period$ -- 26
+call.type$ -- 13
+change.case$ -- 13
 chr.to.int$ -- 0
-cite$ -- 14
-duplicate$ -- 904
-empty$ -- 931
-format.name$ -- 343
-if$ -- 3193
+cite$ -- 19
+duplicate$ -- 1065
+empty$ -- 1121
+format.name$ -- 352
+if$ -- 3590
 int.to.chr$ -- 0
-int.to.str$ -- 8
-missing$ -- 378
-newline$ -- 47
-num.names$ -- 7
-pop$ -- 1144
+int.to.str$ -- 13
+missing$ -- 416
+newline$ -- 62
+num.names$ -- 10
+pop$ -- 1256
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 846
+skip$ -- 984
 stack$ -- 0
-substring$ -- 8
-swap$ -- 782
+substring$ -- 13
+swap$ -- 873
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 8
+type$ -- 13
 warning$ -- 6
-while$ -- 7
-width$ -- 9
-write$ -- 74
+while$ -- 10
+width$ -- 15
+write$ -- 108
 (There were 6 warnings)

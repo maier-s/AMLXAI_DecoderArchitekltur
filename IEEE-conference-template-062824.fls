@@ -267,6 +267,9 @@ INPUT C:\Users\MAIERS3\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmb8
 INPUT .\IEEE-conference-template-062824.bbl
 INPUT .\IEEE-conference-template-062824.bbl
 INPUT IEEE-conference-template-062824.bbl
+INPUT C:\Users\MAIERS3\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\omsptm.fd
+INPUT C:\Users\MAIERS3\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\omsptm.fd
+INPUT C:\Users\MAIERS3\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\omsptm.fd
 INPUT IEEE-conference-template-062824.aux
 INPUT .\IEEE-conference-template-062824.out
 INPUT .\IEEE-conference-template-062824.out
@@ -284,6 +287,8 @@ INPUT C:\Users\MAIERS3\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts
 INPUT C:\Users\MAIERS3\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Users\MAIERS3\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy7.pfb
 INPUT C:\Users\MAIERS3\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy7.pfb
+INPUT C:\Users\MAIERS3\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb
+INPUT C:\Users\MAIERS3\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb
 INPUT C:\Users\MAIERS3\AppData\Local\Programs\MiKTeX\fonts\type1\urw\times\utmb8a.pfb
 INPUT C:\Users\MAIERS3\AppData\Local\Programs\MiKTeX\fonts\type1\urw\times\utmb8a.pfb
 INPUT C:\Users\MAIERS3\AppData\Local\Programs\MiKTeX\fonts\type1\urw\times\utmbi8a.pfb

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.6.17)  9 OCT 2024 23:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.6.17)  10 OCT 2024 23:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -403,7 +403,7 @@ Underfull \hbox (badness 2277) in paragraph at lines 45--46
 
 
 
-<Bilder/EntwicklungLLM.png, id=65, 822.82407pt x 630.10406pt>
+<Bilder/EntwicklungLLM.png, id=105, 822.82407pt x 630.10406pt>
 File: Bilder/EntwicklungLLM.png Graphic file (type png)
 <use Bilder/EntwicklungLLM.png>
 Package pdftex.def Info: Bilder/EntwicklungLLM.png  used on input line 53.
@@ -413,17 +413,17 @@ Underfull \hbox (badness 3907) in paragraph at lines 51--58
 []\OT1/ptm/m/n/10 Transformer bilden das Grundger[]ust mod-erne gro^^Yer
  []
 
-<Bilder/DecoderArchitekturGPT.png, id=71, 219.82124pt x 369.63094pt>
+<Bilder/DecoderArchitekturGPT.png, id=111, 219.82124pt x 369.63094pt>
 File: Bilder/DecoderArchitekturGPT.png Graphic file (type png)
 <use Bilder/DecoderArchitekturGPT.png>
 Package pdftex.def Info: Bilder/DecoderArchitekturGPT.png  used on input line 62.
 (pdftex.def)             Requested size: 100.79846pt x 169.49083pt.
-<Bilder/MultiheadSelfAttention.png, id=74, 868.24374pt x 478.78876pt>
+<Bilder/MultiheadSelfAttention.png, id=114, 868.24374pt x 478.78876pt>
 File: Bilder/MultiheadSelfAttention.png Graphic file (type png)
 <use Bilder/MultiheadSelfAttention.png>
 Package pdftex.def Info: Bilder/MultiheadSelfAttention.png  used on input line 69.
 (pdftex.def)             Requested size: 252.0pt x 138.96207pt.
-<Bilder/AttentionMechanismus.png, id=77, 600.2425pt x 168.63pt>
+<Bilder/AttentionMechanismus.png, id=117, 600.2425pt x 168.63pt>
 File: Bilder/AttentionMechanismus.png Graphic file (type png)
 <use Bilder/AttentionMechanismus.png>
 Package pdftex.def Info: Bilder/AttentionMechanismus.png  used on input line 77.
@@ -435,7 +435,7 @@ Package pdftex.def Info: Bilder/AttentionMechanismus.png  used on input line 77.
 
 ]
 
-<Bilder/MaskierungAttentionWeights.png, id=92, 601.24625pt x 156.585pt>
+<Bilder/MaskierungAttentionWeights.png, id=132, 601.24625pt x 156.585pt>
 File: Bilder/MaskierungAttentionWeights.png Graphic file (type png)
 <use Bilder/MaskierungAttentionWeights.png>
 Package pdftex.def Info: Bilder/MaskierungAttentionWeights.png  used on input line 85.
@@ -455,7 +455,7 @@ Underfull \hbox (badness 6876) in paragraph at lines 95--96
 
 LaTeX Warning: Reference `ig:DecoderArchitektur' on page 3 undefined on input line 100.
 
-<Bilder/TokenAnpassungGPT1.png, id=125, 597.73312pt x 311.66437pt>
+<Bilder/TokenAnpassungGPT1.png, id=165, 597.73312pt x 311.66437pt>
 File: Bilder/TokenAnpassungGPT1.png Graphic file (type png)
 <use Bilder/TokenAnpassungGPT1.png>
 Package pdftex.def Info: Bilder/TokenAnpassungGPT1.png  used on input line 115.
@@ -464,12 +464,47 @@ Package pdftex.def Info: Bilder/TokenAnpassungGPT1.png  used on input line 115.
 
 
 
-[3 <./Bilder/TokenAnpassungGPT1.png>] (IEEE-conference-template-062824.bbl
-Underfull \hbox (badness 6284) in paragraph at lines 38--41
+[3 <./Bilder/TokenAnpassungGPT1.png>]
+
+
+Underfull \hbox (badness 5077) in paragraph at lines 143--144
+[]\OT1/ptm/m/n/10 Ein weit-erer wichtiger An-wen-dungs-fall ist die Un-
+ []
+
+
+Underfull \hbox (badness 3536) in paragraph at lines 143--144
+\OT1/ptm/m/n/10 terst[]utzung von gro^^Yen Sprach-mod-ellen bei der Code-
+ []
+
+
+
+[4] (IEEE-conference-template-062824.bbl
+Underfull \hbox (badness 3623) in paragraph at lines 38--41
 []\OT1/ptm/m/n/8 ``Wie Trans-for-ma-toren funk-tion-ieren: Eine de-tail-lierte Erkun-dung
  []
 
 
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 112--114
+[]\OT1/ptm/m/n/8 L. Wut-tke, ``Large Lan-guage Model Fall-beispiele,''
+ []
+
+LaTeX Font Info:    Trying to load font information for OMS+ptm on input line 116.
+(C:\Users\MAIERS3\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omsptm.fd
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <8> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 116.
+
+Underfull \hbox (badness 10000) in paragraph at lines 116--118
+[]\OT1/ptm/m/n/8 ``Microsoft Copi-lot for Se-cu-rity \OMS/cmsy/m/n/8 j \OT1/ptm/m/n/8 Mi-crosoft Se-cu-rity,''
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 116--118
+\OT1/ptm/m/n/8 https://www.microsoft.com/en-us/security/business/ai-machine-
+ []
 
 )
 
@@ -485,7 +520,7 @@ Before submitting the final camera ready copy, remember to:
 
 
 
-[4] (IEEE-conference-template-062824.aux)
+[5] (IEEE-conference-template-062824.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 1
 L3 programming layer <2024-05-27>
@@ -495,20 +530,20 @@ L3 programming layer <2024-05-27>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `IEEE-conference-template-062824.out' has not changed.
-(rerunfilecheck)             Checksum: AC27C0742D0B5BD0902BEB75D8CB2745;2977.
+(rerunfilecheck)             Checksum: FFCFA5F3F23A409C51A85B87F1BE76E3;4663.
  ) 
 Here is how much of TeX's memory you used:
- 11398 strings out of 473919
- 181382 string characters out of 5726009
+ 11449 strings out of 473919
+ 182375 string characters out of 5726009
  1952908 words of memory out of 5000000
- 34073 multiletter control sequences out of 15000+600000
+ 34105 multiletter control sequences out of 15000+600000
  595574 words of font info for 110 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,11n,79p,2248b,444s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/MAIERS3/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/MAIERS3/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/MAIERS3/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/MAIERS3/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/MAIERS3/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/MAIERS3/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/MAIERS3/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/MAIERS3/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/MAIERS3/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/MAIERS3/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/MAIERS3/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on IEEE-conference-template-062824.pdf (4 pages, 1018098 bytes).
+<C:/Users/MAIERS3/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/MAIERS3/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/MAIERS3/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/MAIERS3/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/MAIERS3/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/MAIERS3/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/MAIERS3/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/MAIERS3/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/MAIERS3/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/MAIERS3/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/MAIERS3/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/MAIERS3/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on IEEE-conference-template-062824.pdf (5 pages, 1042651 bytes).
 PDF statistics:
- 218 PDF objects out of 1000 (max. 8388607)
- 40 named destinations out of 1000 (max. 500000)
- 151 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 295 PDF objects out of 1000 (max. 8388607)
+ 56 named destinations out of 1000 (max. 500000)
+ 231 words of extra memory for PDF output out of 10000 (max. 10000000)
 
