@@ -121,4 +121,18 @@ L.~Wuttke, ``{Large Language Model Fallbeispiele},''
   {{SentinelOne DE}},''
   https://de.sentinelone.com/press/sentinelone-unveils-revolutionary-ai-platform-for-cybersecurity/.
 
+\bibitem{kulkarniAppliedGenerativeAI2023}
+A.~Kulkarni, A.~Shivananda, A.~Kulkarni, and D.~Gudivada, \emph{Applied
+  {{Generative AI}} for {{Beginners}}: {{Practical Knowledge}} on {{Diffusion
+  Models}}, {{ChatGPT}}, and {{Other LLMs}}}.\hskip 1em plus 0.5em minus
+  0.4em\relax Berkeley, CA: Apress, 2023.
+
+\bibitem{kulkarniChatGPTArchitectureInDepth2023}
+------, ``The {{ChatGPT Architecture}}: {{An In-Depth Exploration}} of
+  {{OpenAI}}'s {{Conversational Language Model}},'' in \emph{Applied
+  {{Generative AI}} for {{Beginners}}: {{Practical Knowledge}} on {{Diffusion
+  Models}}, {{ChatGPT}}, and {{Other LLMs}}}, A.~Kulkarni, A.~Shivananda,
+  A.~Kulkarni, and D.~Gudivada, Eds.\hskip 1em plus 0.5em minus 0.4em\relax
+  Berkeley, CA: Apress, 2023, pp. 55--77.
+
 \end{thebibliography}

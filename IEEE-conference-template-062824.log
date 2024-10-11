@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.6.17)  10 OCT 2024 23:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.6.17)  11 OCT 2024 22:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -403,7 +403,7 @@ Underfull \hbox (badness 2277) in paragraph at lines 45--46
 
 
 
-<Bilder/EntwicklungLLM.png, id=105, 822.82407pt x 630.10406pt>
+<Bilder/EntwicklungLLM.png, id=129, 822.82407pt x 630.10406pt>
 File: Bilder/EntwicklungLLM.png Graphic file (type png)
 <use Bilder/EntwicklungLLM.png>
 Package pdftex.def Info: Bilder/EntwicklungLLM.png  used on input line 53.
@@ -413,17 +413,17 @@ Underfull \hbox (badness 3907) in paragraph at lines 51--58
 []\OT1/ptm/m/n/10 Transformer bilden das Grundger[]ust mod-erne gro^^Yer
  []
 
-<Bilder/DecoderArchitekturGPT.png, id=111, 219.82124pt x 369.63094pt>
+<Bilder/DecoderArchitekturGPT.png, id=135, 219.82124pt x 369.63094pt>
 File: Bilder/DecoderArchitekturGPT.png Graphic file (type png)
 <use Bilder/DecoderArchitekturGPT.png>
 Package pdftex.def Info: Bilder/DecoderArchitekturGPT.png  used on input line 62.
 (pdftex.def)             Requested size: 100.79846pt x 169.49083pt.
-<Bilder/MultiheadSelfAttention.png, id=114, 868.24374pt x 478.78876pt>
+<Bilder/MultiheadSelfAttention.png, id=138, 868.24374pt x 478.78876pt>
 File: Bilder/MultiheadSelfAttention.png Graphic file (type png)
 <use Bilder/MultiheadSelfAttention.png>
 Package pdftex.def Info: Bilder/MultiheadSelfAttention.png  used on input line 69.
 (pdftex.def)             Requested size: 252.0pt x 138.96207pt.
-<Bilder/AttentionMechanismus.png, id=117, 600.2425pt x 168.63pt>
+<Bilder/AttentionMechanismus.png, id=141, 600.2425pt x 168.63pt>
 File: Bilder/AttentionMechanismus.png Graphic file (type png)
 <use Bilder/AttentionMechanismus.png>
 Package pdftex.def Info: Bilder/AttentionMechanismus.png  used on input line 77.
@@ -435,7 +435,7 @@ Package pdftex.def Info: Bilder/AttentionMechanismus.png  used on input line 77.
 
 ]
 
-<Bilder/MaskierungAttentionWeights.png, id=132, 601.24625pt x 156.585pt>
+<Bilder/MaskierungAttentionWeights.png, id=156, 601.24625pt x 156.585pt>
 File: Bilder/MaskierungAttentionWeights.png Graphic file (type png)
 <use Bilder/MaskierungAttentionWeights.png>
 Package pdftex.def Info: Bilder/MaskierungAttentionWeights.png  used on input line 85.
@@ -455,7 +455,7 @@ Underfull \hbox (badness 6876) in paragraph at lines 95--96
 
 LaTeX Warning: Reference `ig:DecoderArchitektur' on page 3 undefined on input line 100.
 
-<Bilder/TokenAnpassungGPT1.png, id=165, 597.73312pt x 311.66437pt>
+<Bilder/TokenAnpassungGPT1.png, id=189, 597.73312pt x 311.66437pt>
 File: Bilder/TokenAnpassungGPT1.png Graphic file (type png)
 <use Bilder/TokenAnpassungGPT1.png>
 Package pdftex.def Info: Bilder/TokenAnpassungGPT1.png  used on input line 115.
@@ -478,7 +478,31 @@ Underfull \hbox (badness 3536) in paragraph at lines 143--144
 
 
 
-[4] (IEEE-conference-template-062824.bbl
+[4]
+Underfull \hbox (badness 1796) in paragraph at lines 171--172
+[]\OT1/ptm/m/n/10 Excessive Pa-ram-e-ter-i-za-tion $\OMS/cmsy/m/n/10 !$ \OT1/ptm/m/n/10 Gro^^Ye Sprach-mod-elle
+ []
+
+
+
+
+Underfull \hbox (badness 1648) in paragraph at lines 199--200
+\OT1/ptm/m/n/10 zeigt die Weit-er-en-twick-lung von Decoder-only Ar-chitek-
+ []
+
+
+Underfull \hbox (badness 1603) in paragraph at lines 199--200
+\OT1/ptm/m/n/10 De-coder Ar-chitek-turen sind dabei vielf[]altig und re-ichen
+ []
+
+
+Underfull \hbox (badness 1442) in paragraph at lines 199--200
+\OT1/ptm/m/n/10 von []Ubersetzung, Er-stel-lung von In-hal-ten, Such-w-erkzeu-
+ []
+
+
+
+[5] (IEEE-conference-template-062824.bbl
 Underfull \hbox (badness 3623) in paragraph at lines 38--41
 []\OT1/ptm/m/n/8 ``Wie Trans-for-ma-toren funk-tion-ieren: Eine de-tail-lierte Erkun-dung
  []
@@ -520,7 +544,7 @@ Before submitting the final camera ready copy, remember to:
 
 
 
-[5] (IEEE-conference-template-062824.aux)
+[6] (IEEE-conference-template-062824.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 1
 L3 programming layer <2024-05-27>
@@ -530,20 +554,20 @@ L3 programming layer <2024-05-27>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `IEEE-conference-template-062824.out' has not changed.
-(rerunfilecheck)             Checksum: FFCFA5F3F23A409C51A85B87F1BE76E3;4663.
+(rerunfilecheck)             Checksum: 3899E122F7A596732D1A9ADCB8646A9F;5618.
  ) 
 Here is how much of TeX's memory you used:
- 11449 strings out of 473919
- 182375 string characters out of 5726009
+ 11469 strings out of 473919
+ 182808 string characters out of 5726009
  1952908 words of memory out of 5000000
- 34105 multiletter control sequences out of 15000+600000
- 595574 words of font info for 110 fonts, out of 8000000 for 9000
+ 34115 multiletter control sequences out of 15000+600000
+ 596710 words of font info for 111 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,11n,79p,2248b,444s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/MAIERS3/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/MAIERS3/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/MAIERS3/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/MAIERS3/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/MAIERS3/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/MAIERS3/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/MAIERS3/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/MAIERS3/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/MAIERS3/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/MAIERS3/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/MAIERS3/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/MAIERS3/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on IEEE-conference-template-062824.pdf (5 pages, 1042651 bytes).
+Output written on IEEE-conference-template-062824.pdf (6 pages, 1054039 bytes).
 PDF statistics:
- 295 PDF objects out of 1000 (max. 8388607)
- 56 named destinations out of 1000 (max. 500000)
- 231 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 331 PDF objects out of 1000 (max. 8388607)
+ 65 named destinations out of 1000 (max. 500000)
+ 279 words of extra memory for PDF output out of 10000 (max. 10000000)
 

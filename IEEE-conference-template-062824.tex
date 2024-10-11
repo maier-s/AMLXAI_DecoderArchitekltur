@@ -151,13 +151,52 @@ Große Sprachmodelle können auch im Vertriebswesen verwendete werden um Vertrib
 Ein weiterer wichtiger Anwendungsbereich ist in der Stimmungsanalyse. Große Sprachmodelle können dabei helfen die Stimmung von Texten zu analysieren und so beispielsweise die Stimmung von Kunden zu analysieren \cite{keary12PraktischeLarge2023}. Mit der Stimmungsanalyse können Unterhnehmen die assozierten Wörter mit dem Unterhnehmen aus Kommentaren herausfiltern und erhalten ein Bild über die Marke des Unternehmens. Abhängig davon lässt sich die Marke entsprechend der Stimmung verbessern \cite{keary12PraktischeLarge2023}.
 
 \section{Potenzial und Grenzen von Decoder Architekturen}
-Der vorherige Abschnitt zeigt das breite Anwendungsspektrum von Decoder Architekturen. Da sich Decoder Architekturen stetig weiter entwickeln werden sich die Anwendungsfelder ebenfalls erweitern. Nach \cite{keary12PraktischeLarge2023} wird das Marktpotenzial generativer KI's bis 2032 auf bis zu 1,3 Billionen Dollar geschätzt. Neben den Potenzialen gibt es jedoch auch Grenzen die bei der Verwendung von Decoder Architekturen beachtet werden müssen. Diese wurden in \cite{radfordLanguageModelsAre} und \cite{openaiGPT4TechnicalReport2024} für das GPT Modell genauer beschrieben.
-
+Der vorherige Abschnitt zeigt das breite Anwendungsspektrum von Decoder Architekturen. Da sich Decoder Architekturen stetig weiter entwickeln werden sich die Anwendungsfelder ebenfalls erweitern. Nach \cite{keary12PraktischeLarge2023} wird das Marktpotenzial generativer KI's bis 2032 auf bis zu 1,3 Billionen Dollar geschätzt. Neben den Potenzialen gibt es jedoch auch Grenzen die bei der Verwendung von Decoder Architekturen beachtet werden müssen. Es lässt sich dabei unterscheiden in Potenziale und Grenzen durch die Architketurwahl selbst und durch das konkrete Modell wie bspw. GPT.  Für GPT3 wurden die Poteziale und Grenzen in \cite{radfordLanguageModelsAre} und \cite{openaiGPT4TechnicalReport2024} genauer beschrieben.
+\subsection{Potenziale und Grenzen der Decoder Architektur}
+\subsubsection{Potenziale}
+Nach \cite{kulkarniAppliedGenerativeAI2023} bieten dabei Transformer Architekturen mit Self Attention Mechanismus folgende Vorteile:
+\begin{itemize}
+    \item Parallelization and Efficiency $\rightarrow$ Der Self Attention Mechanismus verarbeitet parallel die Eingabe Tokens.
+    \item Long-Range Dependencies $\rightarrow$ Der Self Attention Mechanismus bietet im Vergleich zu Rekursiven Neuronalen Netzwerken die Möglichkeit lange Abhängigkeiten zu besser zu erlernen.
+    \item Scalability $\rightarrow$ Die Komplexität für den Attention Mechanismus is Linear und somit skaliert ein Transformer Modell besser als andere Netzwerke über die Token Länge.
+    \item Transfer Learning with Transformer $\rightarrow$ Wie auch die Paper von GPT zeigen, können Transformer Modelle ohne große Architekturanpassung auf unterschiedliche Anwendungsbereiche gefinetuned werden.
+    \item Contextual Embeddings $\rightarrow$ Die Verwendung von Kontextualisierten Embeddings macht es möglich das ein Wort mehrere Bedeutungen in Abhängigkeit des Kontextes haben kann.
+    \item Global Information Processing $\rightarrow$ Durch die Paralelle Verarbeitung aller Tokens im Attention Mechanismus können globale Informationen verarbeitet werden. Im Vergleich zu RNN's welche die Daten sequenziell verarbeiten.
+\end{itemize}
+\subsubsection{Grenzen}
+Die Grenzen nach \cite{kulkarniAppliedGenerativeAI2023} sind dabei:
+\begin{itemize}
+    \item Attention Overhead for Long Sequences $\rightarrow$ Für extreme Lange Sequenzen kann der Attention Mechanismus sehr Aufwendig zu berechnen sein.
+    \item Lack of Sequential Order $\rightarrow$ Wird zwar durch das Positional Encoding im Eingangslayer erreicht, ist aber jedoch nicht so explizit wie bei RNN's.
+    \item Excessive Parameterization $\rightarrow$ Große Sprachmodelle haben eine hohe Anzahl an Parametern. Damit ist das Training solcher Modelle wesentlich Aufwändinger als bei anderen Modellen.
+    \item Inability to Handle Unstructured Inputs $\rightarrow$ Transformer oder auch Decoder Architekturen wurden für strukturierte Daten entwickelt. Unstrukturierte Daten wie Bilder oder Audiodaten können nicht direkt verarbeitet werden. Dennoch zeigt GPT4 die Multimodalität von LLM's \cite{openaiGPT4TechnicalReport2024}.
+    \item Fixed Input Length $\rightarrow$ Typischer weise besitzen Transformer Modelle eine feste Eingabelänge. Dennoch gibt es Transfromer Architekturen welche mit Variablen Eingabelängen umgehen können \cite{kulkarniChatGPTArchitectureInDepth2023}. 
+\end{itemize}
+\subsection{Potenziale und Grenzen von GPT}
+Im nachfolgenden werden die Potenziale und Grenzen von GPT nach \cite{kulkarniChatGPTArchitectureInDepth2023} beleuchtet.
+\subsubsection{Potenziale}
+Folgen Potenziale bietet das GPT Modell:
+\begin{itemize}
+    \item Understanding of Context $\rightarrow$ GPT Modelle können den Kontext eines Satzes besser verstehen und somit besser auf die Anfrage des Nutzers eingehen.
+    \item Large-Scale Language Model $\rightarrow$ Die GPT Mdelle sind auf Texten aus dem Internet vortrainiert und haben damit ein breite Wissensbasis.
+    \item Fine-Tuning Process $\rightarrow$ Durch das Menschen gesteuerte Feedback Fine-tuning kann GPT bessere uns sichere Antworten generieren.
+    \item Iterative Development $\rightarrow$ Durch ständige Forschung und Weiterentwicklung entsteht eine immer verbesserte Version von GPT
+\end{itemize}
+\subsection{Grenzen}
+Die Grenzen von GPT sind dabei:
+\begin{itemize}
+    \item Lack of World Knowledge $\rightarrow$ GPT Modelle haben nur auf Daten und Informationen zugriff auf diese das Modell trainiert worden ist. Damit Fehlt dem GPT Echtzeit Informationen.
+    \item Biases in Language Model $\rightarrow$ GPT Modelle können durch die Trainingsdaten Biases aufweisen. Die Biases können durch entsprechendes Fine-Tuning reduziert aber nicht komplett eliminiert werden.
+    \item Inappropriate or Unsafe Outputs $\rightarrow$ GPT produziert manchmal unangemessene oder unsichere Ausgaben.
+    \item Absence of Common Sense or Deep Understanding $\rightarrow$ GPT Modelle haben kein tiefes Verständnis von Texten und können daher keine Schlussfolgerungen ziehen. Antworten durch GPT basieren auf Muster im Trainingsdatensatz und generiert dadurch unlogische oder flasche Antworten.
+    \item Inability to Fact-Check $\rightarrow$ GPT kann die Antworten faktisch nicht überprüfen und teniert zum Halluzinieren von Informationen.
+\end{itemize}
 
 \section{Fazit}
+Im nachfolgenden Abschnitt wird zunächst die aktuellen Forschungsbereiche im Bereich der Decoder Architekturen beleuchtet. Im Anschluss wird ein Ausblick auf die zukünftige Entwicklung von Decoder Architekturen gegeben.
 \subsection{Aktuelle Forschungbereiche}
 \subsection{Ausblick}
-
+GPT und die damit verbundenen Decoder Architekturen haben in den letzten Jahren große Fortschritte in der NLP Forschung gebracht. Die Entwicklung von GPT1 bis GPT4 zeigt die Weiterentwicklung von Decoder-only Architekturen in den letzten Jahren. Die Anwendungsbereiche von Decoder Architekturen sind dabei vielfältig und reichen von Übersetzung, Erstellung von Inhalten, Suchwerkzeugen, Virtuellen Assistenten, Erkennung und Verhinderung von Cyberangriffen, Code-Entwicklung, Transkription, Marktforschung, Vertriebsautomatisierung, Stimmungsanalyse. Die Potenziale von Decoder Architekturen liegen dabei in der Parallelisierung und Effizienz, Long-Range Dependencies, Scalability, Transfer Learning, Contextual Embeddings und Global Information Processing. Die Grenzen von Decoder Architekturen liegen in dem Attention Overhead for Long Sequences, Lack of Sequential Order, Excessive Parameterization, Inability to Handle Unstructured Inputs und Fixed Input Length. Die Potenziale von GPT liegen in dem Verständnis des Kontextes, der großen Wissensbasis, dem Fine-Tuning Prozess und dem iterativen Entwicklungsprozess. Die Grenzen von GPT liegen in dem Fehlen von Weltwissen, Biases in den Sprachmodellen, unangemessenen oder unsicheren Ausgaben, dem Fehlen von Common Sense oder tiefem Verständnis und der Unfähigkeit Fakten zu überprüfen. Die Weiterentwicklung von Decoder Architekturen und GPT Modellen wird in den nächsten Jahren weiter vorangetrieben und die Anwendungsbereiche werden sich weiter ausbreiten. Die Forschungsbereiche in der NLP Forschung werden sich weiterentwickeln und die Potenziale und Grenzen von Decoder Architekturen werden weiter erforscht.
 
 
 
