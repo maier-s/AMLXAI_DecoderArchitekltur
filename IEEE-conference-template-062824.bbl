@@ -135,4 +135,12 @@ A.~Kulkarni, A.~Shivananda, A.~Kulkarni, and D.~Gudivada, \emph{Applied
   A.~Kulkarni, and D.~Gudivada, Eds.\hskip 1em plus 0.5em minus 0.4em\relax
   Berkeley, CA: Apress, 2023, pp. 55--77.
 
+\bibitem{sureshSmallerFasterDecoderonly2024}
+S.~K. Suresh and S.~P, ``Towards smaller, faster decoder-only transformers:
+  {{Architectural}} variants and their implications,'' Aug. 2024.
+
+\bibitem{robertsHowPowerfulAre2024}
+J.~Roberts, ``How {{Powerful}} are {{Decoder-Only Transformer Neural
+  Models}}?'' Oct. 2024.
+
 \end{thebibliography}
